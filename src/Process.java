@@ -15,11 +15,25 @@ public class Process implements Priority, Comparable<Process>
 	private int priority;
 	
 	/**
-	 * Preferred constructor to put 
+	 * Empty argument constructor to put 
 	 * a process in a consistent
 	 * state.
 	 * @param processID
 	 */
+	
+	public Process() 
+	{
+		super();
+		this.processID = "";
+		this.priority = 1;
+	}//end empty argument constructor
+	
+	/**
+	 * Preferred constructor to create
+	 * a process with common usage.
+	 * @param processID
+	 */
+	
 	public Process(String processID)
 	{
 		super();
@@ -27,6 +41,15 @@ public class Process implements Priority, Comparable<Process>
 		this.priority = 1;
 	}//end preferred constructor
 
+	/**
+	 * Getter for processID
+	 * @return
+	 */
+	public String getProcessID() 
+	{
+		return processID;
+	}//end getProcessID
+	
 	/**
 	 * Getter for priority
 	 * @return
@@ -47,15 +70,6 @@ public class Process implements Priority, Comparable<Process>
 		else
 			System.out.println("Invalid priority. Must enter 1, 5, or 10.");
 	}//end priority
-
-	/**
-	 * Getter for processID
-	 * @return
-	 */
-	public String getProcessID() 
-	{
-		return processID;
-	}//end getProcessID
 
 	/**
 	 * This method compares

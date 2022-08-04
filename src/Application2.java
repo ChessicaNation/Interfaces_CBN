@@ -1,6 +1,8 @@
 /**
- * Driver to exercise the use of 
- * multiple Task and Process objects.
+ * Driver to test all of
+ * the methods from the Task 
+ * and Process classes and  
+ * the Priority interface.
  * @author chessicanation
  * @version 1.0
  * Project 2
@@ -9,14 +11,7 @@
  */
 public class Application2 
 {
-	/**
-	 * This main method tests all of
-	 * the methods from the Task and
-	 * Process classes, Priority
-	 * interface, and Status
-	 * enumerated type.
-	 * @param args
-	 */
+
 	public static void main(String[] args) 
 	{
 		/* *****************************************************************

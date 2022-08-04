@@ -19,17 +19,31 @@ public class Task implements Priority, Comparable<Task>
 	private int priority;
 	
 	/**
-	 * Preferred constructor to put
+	 * Empty argument constructor to put
 	 * a task in a consistent state.
 	 * @param name
 	 */
+	
+	public Task() 
+	{
+		super();
+		this.name = "";
+		this.priority = 1;
+	}//end empty argument constructor
+	
+	/**
+	 * Preferred constructor to create
+	 * a task with common usage.
+	 * @param name
+	 */
+	
 	public Task(String name) 
 	{
 		super();
 		this.name = name;
 		this.priority = 1;
 	}//end preferred constructor
-	
+
 	/**
 	 * Getter for name
 	 * @return

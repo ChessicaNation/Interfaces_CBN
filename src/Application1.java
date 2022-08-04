@@ -1,6 +1,6 @@
 /**
  * Driver to test the
- * modification of the
+ * compareTo method of the
  * RationalNumber class.
  * @author chessicanation
  * @version 1.0
@@ -11,12 +11,6 @@
 public class Application1 
 {
 
-	/**
-	 * This main method tests the 
-	 * compareTo method of the
-	 * RationalNumber class.
-	 * @param args
-	 */
 	public static void main(String[] args) 
 	{
 
